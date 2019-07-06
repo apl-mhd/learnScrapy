@@ -1,0 +1,37 @@
+/html/body/div[@id='mobile-menu']
+
+//div[@class='menu-overlay'] absolute path
+
+//div[position() = last()-1]
+//*[contains(@class, 'region')]
+//*[starts-with(text(), '')]
+
+//*[contains(content, 'Th')]
+
+{'text': "\n      “Don't cry because it's over, smile because it happened.”\n  "}
+
+
+
+{'text': "\n      “Don't cry because it's over, smile because it happened.”\n  "}
+
+
+{'text': ["\n      “Don't cry because it's over, smile because it happened.”\n  ", '  ―\n  ', '\n']}
+
+
+
+function main(splash, args)
+  assert(splash:go(args.url))
+  assert(splash:wait(0.5))
+  treat = require('treat')
+
+  result = {}
+  for i =1,9,1
+  do
+  	assert(splash:runjs('document.querySelector("#proxylisttable_next a").click()'))
+    result[i] = splash:html()
+  end
+  return treat.as_array(result)
+end
+
+
+'ip': tr.xpath(".//td[1]/text").extract_first(),
