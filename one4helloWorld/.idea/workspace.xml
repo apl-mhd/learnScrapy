@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16d363bf-1157-491f-9660-70feb2ee05cf" name="Default Changelist" comment="" />
+    <list default="true" id="16d363bf-1157-491f-9660-70feb2ee05cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/one4helloWorld/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/one4helloWorld/spiders/__init__.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/one4helloWorld/spiders/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" selection-end-line="2" selection-end-column="43" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-end-line="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -49,24 +53,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/one4helloWorld/all_quotes.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/one4helloWorld/data.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/one4helloWorld/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="915">
               <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/one4helloWorld/spiders/usproxy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="35" column="156" selection-start-line="35" selection-start-column="156" selection-end-line="35" selection-end-column="156" />
+            <state relative-caret-position="480">
+              <caret line="35" column="156" selection-start-line="35" selection-start-column="138" selection-end-line="35" selection-end-column="156" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/one4helloWorld/al_pages_ip.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -77,26 +100,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/one4helloWorld/learn.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/one4helloWorld/__init__.py" />
         <option value="$PROJECT_DIR$/one4helloWorld/test.py" />
-        <option value="$PROJECT_DIR$/one4helloWorld/data.json" />
         <option value="$PROJECT_DIR$/one4helloWorld/items.py" />
-        <option value="$PROJECT_DIR$/one4helloWorld/spiders/__init__.py" />
         <option value="$PROJECT_DIR$/one4helloWorld/clean.json" />
         <option value="$PROJECT_DIR$/one4helloWorld/settings.py" />
         <option value="$PROJECT_DIR$/one4helloWorld/learn.txt" />
         <option value="$PROJECT_DIR$/one4helloWorld/spiders/usproxy.py" />
+        <option value="$PROJECT_DIR$/one4helloWorld/data.json" />
+        <option value="$PROJECT_DIR$/one4helloWorld/all_quotes.json" />
+        <option value="$PROJECT_DIR$/one4helloWorld/spiders/__init__.py" />
       </list>
     </option>
   </component>
@@ -104,11 +131,13 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,10 +160,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/one4helloWorld" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -302,12 +331,16 @@
       <workItem from="1562242069346" duration="178000" />
       <workItem from="1562287546046" duration="1781000" />
       <workItem from="1562352400539" duration="365000" />
-      <workItem from="1562399388724" duration="4635000" />
+      <workItem from="1562399388724" duration="5042000" />
+      <workItem from="1562751728860" duration="316000" />
+      <workItem from="1562859467498" duration="112000" />
+      <workItem from="1563098933306" duration="1362000" />
+      <workItem from="1563114285776" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19016000" />
+    <option name="totallyTimeSpent" value="21221000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -322,7 +355,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18481375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -336,7 +369,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3280098" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3280098" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -347,6 +380,7 @@
       <window_info anchor="right" id="R Packages" order="6" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="7" weight="0.3297568" />
       <window_info anchor="right" id="JSON Viewer" order="8" weight="0.3297568" />
+      <window_info anchor="right" id="JSON Utils" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,18 +407,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www.goodreads.com2.html" />
     <entry file="file://$PROJECT_DIR$/quotes.toscrape.com1.html" />
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/orko.json">
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/orko.json" />
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/clean.json" />
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7215">
-          <caret line="481" column="24" selection-start-line="481" selection-start-column="19" selection-end-line="481" selection-end-column="24" />
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/data.json">
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/x.json" />
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/xaa.json" />
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
-        </state>
+        <state relative-caret-position="-1148" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/one4helloWorld/items.py">
@@ -397,60 +433,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/clean.json">
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/data.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/x.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/xaa.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1148" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/xyz.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/one4helloWorld/learn.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/one4helloWorld/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="915">
           <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/one4helloWorld/spiders/usproxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="35" column="156" selection-start-line="35" selection-start-column="156" selection-end-line="35" selection-end-column="156" />
+        <state relative-caret-position="480">
+          <caret line="35" column="156" selection-start-line="35" selection-start-column="138" selection-end-line="35" selection-end-column="156" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/al_pages_ip.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/xyz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/learn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/all_quotes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one4helloWorld/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

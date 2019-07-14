@@ -3,17 +3,14 @@ from  scrapy.loader import  ItemLoader
 from  one4helloWorld.items import QuoteItem
 
 class QuotesSpider(scrapy.Spider):
-    name = "quotes"
-
-    x=0
-
-    #https://www.goodreads.com/quotes?page=1
 
 
+    name = "goodreads"
 
+    start_urls = [
+                  'https://www.goodreads.com/quotes?page=95',
 
-
-    start_urls = ['https://www.goodreads.com/quotes?page=1']
+                  ]
 
 
     def parse(self, response):
@@ -28,8 +25,6 @@ class QuotesSpider(scrapy.Spider):
             yield  loader.load_item()
 
 
-
-'''
             next_page = response.selector.xpath("//a[@class='next_page']/@href").extract_first()
 
             if next_page is not None:
@@ -38,4 +33,4 @@ class QuotesSpider(scrapy.Spider):
 
                 yield scrapy.Request(url=next_page_link, callback=self.parse)
 
-'''
+
