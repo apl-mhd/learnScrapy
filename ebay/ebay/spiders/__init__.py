@@ -34,6 +34,9 @@ class ebay(scrapy.Spider):
 
     def productPage(self, response):
 
+        x = response.css('div.itemAttr tr ')
+
+
 
         yield{
                 'product_name': response.css("h1.it-ttl::text").get(),
@@ -41,9 +44,17 @@ class ebay(scrapy.Spider):
                 'price': response.css("span#prcIsum::attr('content')").get(),
                 'item_number': response.css("div#descItemNumber::text").get(),
                 'img': response.css("img#icImg::attr('src')").get(),
-                'product_url':ebay.url 
+                'product_url':ebay.url,
 
-            }     
+                "description": [
+                        {
+                         "age": 42,
+                         "email": "foo@example.com"
+                         
+                        }
+                        ]
+
+             }     
 
 
 #
