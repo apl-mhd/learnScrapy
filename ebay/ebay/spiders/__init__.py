@@ -41,8 +41,29 @@ class ebay(scrapy.Spider):
     
         x = trs[0].css('td::text')[0].get()
         y = str(trs[0].css('td')[1].css('span#vi-cond-addl-info::text').get()) + str(trs[0].css('td')[1].css('span#vi-cond-addl-info::text').get()) 
-    
         a[x] = y
+
+        x = 'Brand'
+        y = trs[0].css('td')[3].css('span::text').get()
+        a[x] = y
+
+
+        x = trs[1].css('td::text')[0].get()
+        y = trs[1].css('td')[1].css('span::text').get()
+        a[x]=y
+
+        x = trs[1].css('td::text')[2].get()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
