@@ -34,9 +34,25 @@ class ebay(scrapy.Spider):
 
     def productPage(self, response):
 
-        x = response.css('div.itemAttr tr ')
+        trs = response.css('div.itemAttr tr')   
+
+        a={}         
+
+    
+        x = trs[0].css('td::text')[0].get()
+        y = str(trs[0].css('td')[1].css('span#vi-cond-addl-info::text').get()) + str(trs[0].css('td')[1].css('span#vi-cond-addl-info::text').get()) 
+    
+        a[x] = y
 
 
+
+        
+
+
+
+
+                     
+        
 
         yield{
                 'product_name': response.css("h1.it-ttl::text").get(),
@@ -47,11 +63,9 @@ class ebay(scrapy.Spider):
                 'product_url':ebay.url,
 
                 "description": [
-                        {
-                         "age": 42,
-                         "email": "foo@example.com"
-                         
-                        }
+
+                        a
+
                         ]
 
              }     
