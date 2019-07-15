@@ -15,15 +15,15 @@ class ebay(scrapy.Spider):
 
                   ]
 
-    url=''
+    urlLink = ''
 
 #response.css('li.sresult.lvresult')
     def parse(self, response):
         for i in response.css('li.sresult.lvresult'):
 
-            ebay.url = i.css('a.vip::attr(href)').get()
+            urlLink = i.css('a.vip::attr(href)').get()
 
-            yield scrapy.Request(ebay.url, callback=self.productPage)
+            yield scrapy.Request(urlLink, callback=self.productPage)
 
 
         next_page = response.css('a.gspr.next::attr(href)').get()
@@ -37,11 +37,19 @@ class ebay(scrapy.Spider):
         trs = response.css('div.itemAttr tr')
 
         a={} 
-    
+
+        n=0
+
         for i in trs:
+            if n==0:
+                    
+               y = "New: A brand-new, unused, unopened and undamaged item in original retail packaging (where packaging is applicable). If the item comes direct from a manufacturer," + "it may be delivered in non-retail packaging, such as a plain or unprinted box or plastic bag.   See the seller's listing for full details."
+               n = n+1 
+            else:
+                y = i.css('td')[1].css('span::text').get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '').replace('\n\t\t\t\t\t\t\t\t\t \t\t\t', '')
+
         
             x = i.css('td::text')[0].get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '').replace('\n\t\t\t\t\t\t\t\t\t \t\t\t','')
-            y = i.css('td')[1].css('span::text').get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '').replace('\n\t\t\t\t\t\t\t\t\t \t\t\t', '')
             a[x]= y    
 
 
@@ -49,20 +57,33 @@ class ebay(scrapy.Spider):
             y=None
 
 
-            x = i.css('td::text')[2].get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '').replace('\n\t\t\t\t\t\t\t\t\t \t\t\t', '')
-            if x is not None:
-                y = i.css('td')[3].css('span::text').get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '')
-                a[x]= y 
+            try:
+
+               if n==1:
+                   x='Brand:'
+                   n = n+1
+               else:
+                  x = i.css('td::text')[2].get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '').replace('\n\t\t\t\t\t\t\t\t\t \t\t\t', '')
+
+               y = i.css('td')[3].css('span::text').get().replace('\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t', '')   
+               a[x]= y      
+            except IndexError:
+                gotdata = 'null'
+
+
+            #
+            #if x is not None:
+             #   
+              #  a[x]= y 
             
-
-
         yield{
                 'product_name': response.css("h1.it-ttl::text").get(),
                 'sold': response.css("a.vi-txt-underline::text").get(),
                 'price': response.css("span#prcIsum::attr('content')").get(),
                 'item_number': response.css("div#descItemNumber::text").get(),
                 'img': response.css("img#icImg::attr('src')").get(),
-                'product_url':ebay.url,
+                'product_url':response.request.url,
+
 
                 "description": [
 
